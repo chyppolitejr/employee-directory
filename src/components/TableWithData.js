@@ -1,37 +1,20 @@
-import BootStrapTable from "react-bootstrap-table-next";
-import paginationFactory from "react-bootstrap-table2-paginator";
+// import BootStrapTable from "react-bootstrap-table-next";
+// import paginationFactory from "react-bootstrap-table2-paginator";
 import React, { useState, useEffect } from "react";
 import { link } from "react-router-dom";
 import axios from "axios";
-import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css'
-import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
-const columns = [
-  {
-    dataField: "name.first",
+// import 'react-bootstrap-table2-filter/dist/react-bootstrap-table2-filter.min.css'
+// import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
 
-    text: "First Name",
-    sort: true,
-    filter: textFilter()
-  },
-  {
-    dataField: "name.last",
-    text: "Last Name",
-    sort: true,
-  },
-  {
-    dataField: "email",
-    text: "email",
-  },
-];
 
 const TableWithData = () => {
-  const [data, setData] = useState([]);
+  const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
     axios
       .get("https://randomuser.me/api/?results=25")
       .then((response) => {
-        setData(response.data.results);
+        setEmployees(response.data.results);
         console.log(response.data.results);
       })
       .catch((err) => {
@@ -39,16 +22,32 @@ const TableWithData = () => {
       });
   }, []);
   return (
-    <BootStrapTable
-      keyField="email"
-      data={data}
-      columns={columns}
-      striped
-      hover
-      condensed
-      pagination={paginationFactory()}
-      filter = {filterFactory()}
-    />
+    <table className="table">
+      {/* <caption>Donuts</caption> */}
+      <thead>
+        <tr>
+          <th>Profile Pic</th>
+          <th>Title</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        {employees.map(employee => (
+          <tr key={employee.login.uuid}>
+            <td><img src={employee.picture.thumbnail} alt="profile"></img></td>
+            <td>{employee.name.title}</td>
+            <td>{employee.name.first}</td>
+            <td>{employee.name.last}</td>
+            <td>{employee.email}</td>
+            <td>{employee.phone}</td>
+          </tr>
+        ))}
+      </tbody>
+
+    </table>
   );
 };
 
