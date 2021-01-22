@@ -23,8 +23,7 @@ const TableWithData = () => {
   }, []);
   return (
     <table className="table">
-      {/* <caption>Donuts</caption> */}
-      <thead>
+      <thead className="thead-light">
         <tr>
           <th>Profile Pic</th>
           <th>Title</th>
