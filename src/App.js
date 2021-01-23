@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SearchInput from "./components/SearchInput"
 import Home from "./containers/Home";
-import Table from "./containers/Table"
+import Table from "./components/Table"
 import { getEmployeeList } from "./utils/API";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App container">
       <Home/>
       <SearchInput employees={empList} updateEmployees={setEmpsToDisplay}/>
       <Table employees={empsToDisplay} />
