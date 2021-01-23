@@ -6,7 +6,7 @@ import { getEmployeeList } from "./utils/API";
 
 function App() {
   const [empList, setEmpList] = useState([]);
-  const [sortedEmpList, setSortedEmpList] = useState([]);
+  const [empsToDisplay, setEmpsToDisplay] = useState([]);
 
   useEffect(() => {
     getEmployeeList().then(({ data: { results } }) => setEmpList(results));
@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <Home/>
-      <SearchInput employees={empList} sortedEmployees={sortedEmpList}/>
-      <Table employees={empList} />
+      <SearchInput employees={empList} updateEmployees={setEmpsToDisplay}/>
+      <Table employees={empsToDisplay} />
     </div>
   );
 }
