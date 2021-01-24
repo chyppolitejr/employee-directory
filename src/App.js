@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App container">
+    <div className="App">
       <Home/>
       <SearchInput employees={empList} updateEmployees={setEmpsToDisplay}/>
       <Table employees={empsToDisplay} />
