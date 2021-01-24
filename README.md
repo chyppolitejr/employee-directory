@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  # React Employee Directory 
 
-## Available Scripts
 
-In the project directory, you can run:
+  # Table of Contents 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  [Description](#description) 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  [Technologies Used](#technologies-used) 
 
-### `npm test`
+  [Screenshots](#application-screenshots) 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  [Installation](#installation) 
 
-### `npm run build`
+  [Application Usage](#usage) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  [Credits](#credits) 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  [Deployed Application](#deployed-application) 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  [License](#license) 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ## Description 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  Bootcamp homework assignment to display a react table with sort and filter functionality 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ## Technologies Used 
 
-## Learn More
+  ReacJS, NodeJS,NPM,react-bootstap, javascript 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ## Application Screenshots
+  <img src="./employee-directory-screeny.png" alt="application"> Uncomment this line to add application image 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  ## Installation 
 
-### Analyzing the Bundle Size
+  Fork Repo. Clone to local machine. navigate to local repo in terminal. run npm i to install dependencies. run npm start to launch app
+  ## Usage 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  app will launch in a new browser window once started. The email address can be sorted. type any letters in search field and employee list will be filtered by first name 
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  ## Credits 
 
-### Advanced Configuration
+   
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+  ## Deployed Application 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  https://chyppolitejr.github.io/employee-directory 
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ## License 
+
+  Licensed under the [MIT](LICENSE) license.
+  
