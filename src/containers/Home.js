@@ -1,6 +1,6 @@
 import React from "react";
 // import Container from "../components/Container";
-import TableWithData from "../components/TableWithData.js.old"
+import TableWithData from "../components/Table"
 import SearchInput from "../components/SearchInput"
 
 const Home = () => {

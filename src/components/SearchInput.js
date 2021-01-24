@@ -16,7 +16,7 @@ const SearchInput = ({ employees, updateEmployees }) => {
   }, [searchTerm, employees]);
 
   return (
-    <div>
+    <div className="container mb-1">
       <input
         type="text"
         value={searchTerm}
