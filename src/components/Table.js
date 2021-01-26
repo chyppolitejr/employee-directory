@@ -66,12 +66,13 @@ const useSortableData = (items, config = null) => {
             <th>Title</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>
-              <button
+            <th onClick={() => requestSort("email")}
+                className={getClassNamesFor("email")}>
+              {/* <button
                 type="button"
                 onClick={() => requestSort("email")}
                 className={getClassNamesFor("email")}
-              ></button>
+              ></button> */}
               Email Address
             </th>
             <th>Phone</th>
